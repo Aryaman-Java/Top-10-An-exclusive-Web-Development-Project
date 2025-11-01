@@ -1,0 +1,555 @@
+/* Universal Selectors */
+:root {
+  --color-1: #0f1017;
+  --text-color: #f0f0f0;
+  --accent-color: #006aff;
+  --background-color: #f6f8f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  z-index: 0;
+  overflow-x: hidden;
+  position: relative;
+  font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+  overflow-y: visible;
+}
+
+body {
+  background-color: var(--background-color);
+  color: #fff;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+a {
+  color: white;
+  transition: 0.6s ease;
+}
+
+/* Navigation Selectors */
+nav {
+  height: 60px;
+  background-color: var(--color-1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.links-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+nav a:hover {
+  background-color: var(--accent-color);
+}
+
+.logo-icon img {
+  width: 70px;
+  height: 70px;
+}
+
+.home-link {
+  margin-right: auto;
+}
+
+nav svg {
+  fill: var(--text-color);
+}
+
+#sidebar-active {
+  display: none;
+}
+
+.open-sidebar-button,
+.close-sidebar-button {
+  display: none;
+}
+
+@media (max-width: 610px) {
+  .links-container {
+  }
+}
+/* Main Selectors */
+main {
+  position: relative;
+  z-index: 0;
+  max-width: 100dvw;
+}
+
+article {
+  color: var(--color-1);
+  padding: 20px;
+  max-width: 100vw;
+  text-align: center;
+  background-color: #c8f5f2;
+  border-radius: 8px;
+}
+
+#topic {
+  font-family: Poppins;
+  text-decoration: solid;
+  font-weight: bolder;
+  font-size: 40px;
+  margin: 10px 0px 0.3em 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#topic div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#span1 {
+  background-color: #000;
+  border-radius: 15px;
+  padding: 0.2em;
+}
+
+#topic strong {
+  font-family: Open Sans;
+  font-weight: bolder;
+  font-size: 48px;
+  background: linear-gradient(
+    to bottom,
+    #133050,
+    #1691c5,
+    #11344f,
+    #1691c5,
+    #133050
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.header-description {
+  font-size: 23px;
+  font-family: Poppins;
+}
+
+.anime-list {
+  display: flex;
+  font-size: 21px;
+  font-weight: bolder;
+  flex-wrap: wrap;
+  gap: 0.4em 5em;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  padding: 8px 0px;
+}
+
+.anime-list li a {
+  color: black;
+  text-decoration: none;
+}
+
+.anime-list li a:hover {
+  color: #b0b0b0;
+}
+
+.page-navigation {
+  max-width: 100vw;
+  background-color: #77dfd3;
+  margin-top: 1.2em;
+}
+
+h2 {
+  color: red;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: relative;
+  left: 0;
+}
+
+#Dragon-Ball-Z {
+  border: 5px solid #fff;
+  background-color: darkslategray;
+  border-radius: 20px;
+  width: 1089px;
+  padding: 20px;
+  margin-top: 10px;
+  font-family: Poppins;
+}
+
+#Dragon-Ball-Z-image {
+  padding: 0px;
+  margin: 30px 20px 30px 30px;
+  border: 5px solid black;
+  border-radius: 40px;
+  height: 600px;
+}
+
+#One-Piece {
+  border: 5px solid #fff;
+  background-color: darkviolet;
+  border-radius: 20px;
+  width: 1089px;
+  padding: 20px;
+  margin: 0;
+  font-family: Poppins;
+}
+
+#One-Piece-image {
+  padding: 0px;
+  margin: 30px 20px 30px 30px;
+  border: 5px solid black;
+  border-radius: 40px;
+  height: 450px;
+}
+
+#Bleach {
+  border: 5px solid #fff;
+  background-color: darkcyan;
+  border-radius: 20px;
+
+  width: 1089px;
+  padding: 20px;
+  margin: 0;
+  font-family: Poppins;
+}
+
+#Bleach-image {
+  padding: 0px;
+
+  margin: 30px 20px 30px 30px;
+  border: 5px solid black;
+  border-radius: 40px;
+  height: 650px;
+}
+
+#Naruto {
+  border: 5px solid #fff;
+  background-color: darkblue;
+  border-radius: 20px;
+
+  width: 1089px;
+  padding: 20px;
+  margin: 0;
+  font-family: Poppins;
+}
+
+#Naruto-image {
+  padding: 0px;
+
+  margin: 30px 20px 30px 30px;
+  border: 5px solid black;
+  border-radius: 40px;
+  height: 650px;
+}
+
+#Attack-On-Titan {
+  border: 5px solid #fff;
+  background-color: Purple;
+  border-radius: 20px;
+
+  width: 1089px;
+  padding: 20px;
+  margin: 0;
+  font-family: Poppins;
+}
+
+#Attack-On-Titan-image {
+  padding: 0px;
+
+  margin: 30px;
+  border: 5px solid black;
+  border-radius: 40px;
+  height: 640px;
+}
+
+#Hunter-X-Hunter {
+  border: 5px solid #fff;
+  background-color: dodgerblue;
+  border-radius: 20px;
+
+  width: 1089px;
+  padding: 20px;
+  margin: 0;
+  font-family: Poppins;
+}
+
+#Hunter-X-Hunter-image {
+  padding: 0px;
+
+  margin: 30px;
+  border: 10px solid black;
+  border-radius: 40px;
+  height: 600px;
+}
+
+#Death-Note {
+  border: 5px solid #fff;
+  background-color: blueviolet;
+  border-radius: 20px;
+  width: 1089px;
+  padding: 20px;
+  margin: 0;
+  font-family: Poppins;
+}
+
+#Death-Note-image {
+  padding: 0px;
+  margin: 30px;
+  border: 5px solid black;
+  border-radius: 40px;
+  height: 600px;
+}
+
+#Fullmetal-Alchemist-Brotherhood {
+  border: 5px solid #fff;
+  background-color: darkblue;
+  border-radius: 20px;
+
+  width: 1089px;
+  padding: 20px;
+  margin: 0;
+  font-family: Poppins;
+}
+
+#Fullmetal-Alchemist-Brotherhood-image {
+  padding: 0px;
+
+  height: 600px;
+  margin: 30px;
+  border: 5px solid black;
+  border-radius: 40px;
+}
+
+#Monster {
+  border: 5px solid #fff;
+  background-color: darkslateblue;
+  border-radius: 20px;
+
+  width: 1089px;
+  padding: 20px;
+  margin: 0;
+  font-family: Poppins;
+}
+
+#Monster-image {
+  padding: 0px;
+
+  margin: 30px;
+  height: 510px;
+  border: 1 0px solid black;
+  border-radius: 40px;
+}
+
+#Haikyuu {
+  border: 5px solid #fff;
+  background-color: cornflowerblue;
+  border-radius: 20px;
+
+  width: 1089px;
+  padding: 20px;
+  margin: 0;
+  font-family: Poppins;
+}
+
+#Haikyuu-image {
+  height: 600px;
+
+  padding: 0px;
+  border: 5px solid black;
+  border-radius: 40px;
+  margin: 30px;
+}
+
+.footer-hover {
+  background: radial-gradient(at zleft, #382042, black);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+/* Footer Selectors */
+footer {
+  height: 80vh;
+  background-color: #000;
+  margin: 10px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10em 10em;
+  font-size: 14px;
+  width: 93.8rem;
+}
+
+#footer-logo-span1 p {
+  width: 50%;
+}
+
+#footer-logo2-span1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.6em;
+}
+
+#footer-logo2-span1 h5 {
+  color: #fff;
+  font-size: 16px;
+}
+
+#footer-logo2-span1 p {
+  color: #b0b0b0;
+}
+
+#footer-logo-span1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+#footer-logo-span1 h4 {
+  color: #fff;
+  font-size: 18px;
+}
+
+#footer-logo-span1 p {
+  color: #b0b0b0;
+}
+
+#footer-logo2-span2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+}
+
+#footer-logo2-span2 h5 {
+  color: #fff;
+  font-size: 16px;
+}
+
+#footer-logo2-span2 p {
+  color: #b0b0b0;
+}
+
+.footer-info {
+  display: flex;
+  gap: 7em;
+}
+
+.footer-info-div1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9em;
+}
+
+.footer-info-div1 h5 {
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer-info-div1 ul li {
+  color: #b0b0b0;
+}
+
+.footer-info-div2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9em;
+}
+
+.footer-info-div2 h5 {
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer-info-div2 ul li {
+  color: #b0b0b0;
+}
+
+.footer-info-div3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9em;
+}
+
+.footer-info-div3 h5 {
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer-info-div3 ul li {
+  color: #b0b0b0;
+}
+
+#footer-logo {
+  height: 80px;
+  padding: 0px;
+  margin: 0px;
+  display: block;
+  justify-self: center;
+}
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3em;
+}
+
+#footer-logo2 {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+#footer-text {
+  text-align: center;
+}
+
+.footer-uls {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  row-gap: 0.7em;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  height: 30px;
+  width: 0px;
+  display: flex;
+}
+
+#Youtube-link {
+  height: 30px;
+}
+
+#Twitter-link {
+  height: 30px;
+}
+
+#Instagram-link {
+  height: 30px;
+}
