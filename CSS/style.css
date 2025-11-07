@@ -63,6 +63,7 @@ nav a {
 
 nav .underline-link:hover {
   background-color: var(--accent-color);
+  border-radius: 8px;
 }
 
 .home-link {
