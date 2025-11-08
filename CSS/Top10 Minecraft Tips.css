@@ -210,6 +210,7 @@ article {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  text-align: center;
 }
 
 article ol {
@@ -295,4 +296,10 @@ h1 {
   color: #1691c5;
   transition: color 0.8s ease-in-out;
   cursor: pointer;
+}
+
+.Tip-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
