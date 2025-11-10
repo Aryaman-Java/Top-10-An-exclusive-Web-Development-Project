@@ -1,177 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top 10 Brands of the World</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top 10 Brands of the World</title>
 </head>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    :root {
-  --color-1: #060709;
-  --accent-color: #e74c3c;
-  --text-color: #ecf0f1;
-  --background-color: #0d121e;
-  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  --primary-color: #2980b9;
-  --secondary-color: #12c65d;
-  --hover-color: #8e44ad;
-}
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  font-family: 'poppins';
-  background-color:rgb(28, 28, 197);
-}
-a {
-  color: white;
-  transition: 0.6s ease;
-}
-    nav {
-  height: 60px;
-  background-color: var(--color-1);
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+  :root {
+    --color-1: #060709;
+    --accent-color: #e74c3c;
+    --text-color: #ecf0f1;
+    --background-color: #0d121e;
+    --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --primary-color: #2980b9;
+    --secondary-color: #12c65d;
+    --hover-color: #8e44ad;
+  }
 
-.links-container {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
+  html {
+    scroll-behavior: smooth;
+  }
 
-nav a {
-  height: 100%;
-  padding: 0px 20px;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: var(--text-color);
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: var(--text-color);
-  border-radius: 5px;
-  transition: all 0.7s ease;
-  gap: 10px;
-}
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
 
-nav .underline-link:hover {
-  background-color: #3d5f92;
-  transform: scale(1.05);
-}
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'poppins';
+    background-color: rgb(220, 223, 225);
+  }
 
-.home-link {
-  margin-right: auto;
-}
+  a {
+    color: white;
+    transition: 0.6s ease;
+  }
 
-.logo-icon:hover {
-  text-decoration: none;
-  background-color: var(--color-1);
-}
+  nav {
+    height: 60px;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
 
-.logo-icon {
-  gap: 0;
-}
+  .links-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
-nav svg {
-  fill: var(--text-color);
-}
+  nav a {
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    border-radius: 5px;
+    transition: all 0.7s ease;
+    gap: 10px;
+  }
 
-#sidebar-active {
-  display: none;
-}
+  nav .underline-link:hover {
+    background-color: #3d5f92;
+    transform: scale(1.05);
+  }
 
-.open-sidebar-button,
-.close-sidebar-button {
-  display: none;
-}
+  .home-link {
+    margin-right: auto;
+  }
 
-#overlay {
-  display: none;
-}
-h1{
-  text-align: center;
-  color: rgb(225, 197, 39);
-  margin-top: 20px;
-  font-family: 'poppins';
-}
+  .logo-icon:hover {
+    text-decoration: none;
+    background-color: var(--color-1);
+  }
+
+  .logo-icon {
+    gap: 0;
+  }
+
+  nav svg {
+    fill: var(--text-color);
+  }
+
+  #sidebar-active {
+    display: none;
+  }
+
+  .open-sidebar-button,
+  .close-sidebar-button {
+    display: none;
+  }
+
+  #overlay {
+    display: none;
+  }
+
+  h1 {
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    font-family: 'poppins';
+  }
+
+  header {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-family: 'poppins';
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  ol {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 30px auto;
+    font-size: 18px;
+    color: black;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+  }
+
+  ol li {
+    margin: 10px;
+    padding: 10px;
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: rgb(237, 231, 231);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: black;
+  }
+
+  ol li a {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    list-style-type: decimal;
+  }
+
+  ol li a:link {
+    text-decoration: none;
+    color: black;
+  }
+
+  ol li a:visited {
+    text-decoration: none;
+    color: rgb(50, 3, 3);
+  }
+
+  ol li a:hover {
+    text-decoration: none;
+    color: rgb(26, 161, 182);
+  }
+
+  ::selection {
+    background-color: black;
+    color: green;
+  }
+
+  div.heading {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px;
+    color: black;
+    font-family: 'poppins';
+  }
+
+  .content img {
+    height: auto;
+    float: right;
+    margin: 20px;
+    border-radius: 20px;
+    border: 5px solid white;
+  }
+
+  .content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: black;
+    margin: 20px;
+    font-family: 'poppins';
+    background-color: white;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-weight: 400;
+  }
+
+  .content strong {
+    font-size: 20px;
+    color: black;
+    padding-left: 20px;
+  }
 </style>
+
 <body>
-   <nav>
-      <input type="checkbox" id="sidebar-active" />
-      <label for="sidebar-active" class="open-sidebar-button">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="32px"
-          viewBox="0 -960 960 960"
-          width="32px"
-          fill="#e3e3e3"
-        >
-          <path
-            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-          />
+  <nav>
+    <input type="checkbox" id="sidebar-active" />
+    <label for="sidebar-active" class="open-sidebar-button">
+      <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3">
+        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+      </svg>
+    </label>
+    <label for="sidebar-active" id="overlay"></label>
+    <div class="links-container">
+      <label for="sidebar-active" class="close-sidebar-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
         </svg>
       </label>
-      <label for="sidebar-active" id="overlay"></label>
-      <div class="links-container">
-        <label for="sidebar-active" class="close-sidebar-button">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="32px"
-            viewBox="0 -960 960 960"
-            width="32px"
-            fill="#e3e3e3"
-          >
-            <path
-              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-            />
-          </svg>
-        </label>
-        <a class="logo-icon" href="index.html">
-          <img
-            src="Images/Logo.png"
-            alt="Logo Image"
-            width="80px"
-            height="80px"
-          />
-          <h3>INDIA</h3>
-        </a>
-        <a href="index.html" class="underline-link home-link">
-          <i class="fas fa-home"></i>Home</a
-        >
-        <a href="#" class="underline-link"
-          ><i class="fas fa-info-circle"></i>About</a
-        >
-        <a href="#" class="underline-link"><i class="fas fa-blog"></i>Blog</a>
-        <a href="#" class="underline-link"
-          ><i class="fas fa-sign-in-alt"></i>Login</a
-        >
-        <a href="#" class="underline-link"
-          ><i class="fas fa-envelope"></i>Contact Us</a
-        >
-      </div>
-    </nav> 
-    <header>
-      <h1>Top 10 Cricketers in the World</h1>
+      <a class="logo-icon" href="index.html">
+        <img src="Images/Logo.png" alt="Logo Image" width="80px" height="80px" />
+        <h3>INDIA</h3>
+      </a>
+      <a href="index.html" class="underline-link home-link">
+        <i class="fas fa-home"></i>Home</a>
+      <a href="#" class="underline-link"><i class="fas fa-info-circle"></i>About</a>
+      <a href="#" class="underline-link"><i class="fas fa-blog"></i>Blog</a>
+      <a href="#" class="underline-link"><i class="fas fa-sign-in-alt"></i>Login</a>
+      <a href="#" class="underline-link"><i class="fas fa-envelope"></i>Contact Us</a>
+    </div>
+  </nav>
+  <header>
+    <h1>Top 10 Brands in the World</h1>
+    <p>
+      In today's global marketplace, a handful of brands have transcended their products to become cultural icons,
+      shaping consumer behavior and setting the standards for excellence worldwide. These elite companies have mastered
+      the art of building emotional connections, delivering consistent quality, and innovating relentlessly to secure
+      their positions at the pinnacle of brand recognition and value. From tech giants revolutionizing how we connect to
+      luxury houses defining elegance and aspiration, join us as we explore the world's most influential brands that not
+      only dominate their industries but have become integral parts of our daily lives and global culture.The cricketers
+      which are
+      talked about in this website are shortlisted below:-
+    <ol>
+      <li><a href="#Apple">Apple</a></li>
+      <li><a href="#Google">Google</a></li>
+      <li><a href="#Microsoft">Microsoft</a></li>
+      <li><a href="#Amazon">Amazon</a></li>
+      <li><a href="#MC Donalds">MC Donalds</a></li>
+      <li><a href="#NVIDIA">NVIDIA</a></li>
+      <li><a href="#Tesla">Tesla</a></li>
+      <li><a href="#Louis Vuitton">Louis Vuitton</a></li>
+      <li><a href="#Samsung">Samsung</a></li>
+      <li><a href="#Tencent">Tencent</a></li>
+    </ol>
+    </p>
+  </header>
+  <section id="Apple">
+    <div class="heading">1.Apple</div>
+    <div class="content">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.NgsjE1uGoNNSXx1kegD2swHaEK?pid=Api&P=0&h=180" alt="Apple Logo">
       <p>
-        
+        <strong>1. Company Snapshot</strong><br />
+        Apple Inc. is an American multinational technology company headquartered in Cupertino, California. It is widely
+        considered the world's most valuable brand and a dominant force in consumer electronics, software, and services.
+        Founded on April 1, 1976, by Steve Jobs, Steve Wozniak, and Ronald Wayne, Apple's journey from a garage startup
+        to a multi-trillion dollar corporation is a cornerstone of modern business history. The company is renowned for
+        its ethos of minimalist design, seamless user experience, and a powerfully integrated ecosystem that fosters
+        intense customer loyalty. Its iconic logo—a simple, bitten apple—is one of the most recognized symbols on the
+        planet.<br />
+        <strong>2. Founding History & Key Milestones</strong><br />
+        Apple's history is marked by revolutionary products that defined and redefined entire industries.<br />
+
+        <strong>1976:</strong> Steve Jobs and Steve Wozniak introduce the Apple I, a single-circuit board computer,
+        launching the company from a garage.<br />
+
+        <strong>1977:</strong> The Apple II is launched, becoming one of the first highly successful mass-produced
+        microcomputers.<br />
+
+        <strong></strong>1984: Apple introduces the Macintosh with a groundbreaking Super Bowl commercial directed by
+        Ridley Scott. It brought the graphical user interface (GUI) to a mainstream audience<br />.
+
+        <strong>1985: </strong>Steve Jobs is forced out of Apple after a power struggle with the board of
+        directors.<Br />
+
+        <strong>1997:</strong> With Apple struggling and near bankruptcy, Steve Jobs returns as interim CEO, initiating
+        a dramatic corporate turnaround.<br />
+
+        <strong>1998:</strong> The launch of the iMac (G3) saves the company, showcasing a focus on design and setting
+        the stage for future successes.<br />
+
+        <strong>2001:</strong> The iPod is introduced, revolutionizing how people listened to music and effectively
+        disrupting the portable music player market.<br />
+
+        <strong>2003:</strong> The iTunes Store launches, creating a legal and easy-to-use platform for digital music
+        sales.<br />
+
+        <strong>2007:</strong> Steve Jobs unveils the iPhone, calling it a "revolutionary mobile phone," "widescreen
+        iPod," and "breakthrough Internet communicator." It redefines the smartphone and the future of computing.<br />
+
+        <strong>2008:</strong> The App Store is launched, creating an entirely new economy for software developers and
+        solidifying the iPhone's dominance.<br />
+
+        <strong>2010:</strong> The iPad is introduced, creating the modern tablet computer market.<br />
+
+        <strong>2011:</strong> Tim Cook becomes CEO following Steve Jobs's resignation and subsequent passing.<br />
+
+        <strong>2015:</strong> The Apple Watch launches, establishing the company in the wearables and health tech
+        space.<br />
+
+        <strong>2016:</strong> The AirPods are released, popularizing the true wireless earbud category.<br />
+
+        <strong>2020:</strong> Apple announces its shift to its own Apple Silicon chips for the Mac, beginning with the
+        M1 chip, a move that dramatically improved performance and battery life.<br />
+
+        <strong>2023:</strong> The Apple Vision Pro is announced, marking the company's entry into the spatial computing
+        and mixed-reality headset market.<br />
+
+        Apple's journey is characterized by its ability to innovate and adapt, consistently pushing the boundaries of
+        technology and design while maintaining a strong brand identity that resonates globally.<br /><br />
+        <strong>3. Core Business Segments & Product Portfolio</strong>
+        <br />
+        Apple's business is structured around a powerful hardware-software-services ecosystem.<br /><br />
+
+        <strong>iPhone:</strong> The flagship product, accounting for the largest portion of revenue. It is the central
+        hub of the Apple ecosystem.<br /><br />
+
+        <strong>Mac:</strong> A line of desktop and laptop computers, including the iMac, MacBook Air, MacBook Pro, and
+        Mac Studio.<br /><br />
+
+        <strong>iPad:</strong> The market-leading tablet computer, available in various models like the iPad Pro, iPad
+        Air, and iPad mini.<br /><br />
+
+        <strong>Wearables, Home, and Accessories:</strong> This segment includes the Apple Watch, AirPods, AirTag, and
+        HomePod smart speaker.<br /><br />
+
+        <strong>Services:</strong> A rapidly growing and high-margin segment that includes:<br /><br />
+
+        <strong>App Store:</strong> The digital marketplace for iOS and macOS apps.<br /><br />
+
+        <strong>Apple Music & TV+:</strong> Subscription services for music and video streaming.<br /><br />
+
+        <strong>iCloud:</strong> Cloud storage and syncing services.<br /><br />
+
+        <strong>Apple Pay:</strong> A mobile payment and digital wallet service.<br /><br />
+
+        <strong>Apple Card:</strong> A credit card integrated with the Wallet app.<br /><br />
+
+        <strong>Apple Arcade & Fitness+:</strong> Gaming and fitness subscription services.<br /><br />
+
+        <strong>Apple News+ & Books:</strong> Content subscription services.<br /><br />
+
+        <strong>4. Brand Identity & Philosophy</strong><br />
+        Apple's brand is built on a set of core principles that have remained consistent for decades.<br /><br />
+
+        <strong>Design Excellence:</strong> A relentless focus on minimalist, elegant, and user-centric design. The
+        philosophy is that technology should be intuitive and beautiful, both in hardware and software.<br /><br />
+
+        <strong>The Integrated Ecosystem (The "Walled Garden"):</strong> Apple's greatest strength. Its devices and
+        services are designed to work together flawlessly (e.g., Handoff, AirDrop, Universal Clipboard). This creates a
+        seamless user experience that encourages brand loyalty and makes switching to competitors difficult.<br /><br />
+
+        <strong>Innovation Through Perfection:</strong> Apple rarely invents a product category but often perfects it.
+        It enters markets with a superior, more polished product that redefines user expectations (e.g., iPod vs. MP3
+        players, iPhone vs. smartphones).<br /><br />
+
+        <strong>Marketing and Storytelling:</strong> Apple's marketing focuses on emotion, aspiration, and the benefits
+        of the technology rather than technical specifications. Historic campaigns like "1984" and "Think Different" are
+        legendary.<br /><br />
+
+        <strong>Privacy and Security:</strong> In recent years, Apple has heavily marketed itself as a privacy-focused
+        company, differentiating itself from competitors by positioning user data protection as a fundamental human
+        right.<br />
+        <strong>5. Financial Power & Market Position (2023/2024)</strong><br />
+        Apple's financial metrics are a testament to its brand strength and business model.<br />
+
+        <strong>Market Capitalization:</strong> Consistently over $2.8 Trillion, often making it the world's most
+        valuable publicly traded company.<br /><br />
+
+        <strong>Annual Revenue (Fiscal Year 2023):</strong> $383.3 Billion.<br /><br />
+
+        <strong>Brand Value:</strong> Consistently ranked #1 globally by Interbrand and BrandZ, with a valuation
+        exceeding $500 Billion.<br /><br />
+
+        <strong>Key Financial Strength:</strong> A massive and recurring revenue stream from its high-margin Services
+        segment and a fiercely loyal customer base that regularly upgrades its devices.<br /><br />
+
+        <strong>6. Cultural Impact & Legacy</strong><br />
+        Apple's influence extends far beyond technology into global culture.<br /><br />
+
+        <strong>Defining Modern Lifestyle:</strong> The iPhone and its successors have fundamentally changed how people
+        communicate, work, access information, and entertain themselves.<br /><br />
+
+        <strong>Retail Experience:</strong> Apple Stores revolutionized tech retail with their open, minimalist design
+        and the "Genius Bar" for customer support.<br /><br />
+
+        <strong>A Symbol of Creativity:</strong> The "Think Different" campaign permanently associated Apple with
+        non-conformists, innovators, and creative minds.<br /><br />
+
+        <strong>Economic Engine:</strong> The App Store has created millions of jobs and generated hundreds of billions
+        of dollars for developers, fostering a vast global digital economy.<br /><br />
+
+        <strong>Environmental & Social Initiatives:</strong> Apple has made significant commitments to becoming carbon
+        neutral across its entire supply chain by 2030 and emphasizes the use of recycled materials in its
+        products.<br /><br />
+
+        <strong>7. Why Apple is a Top Global Brand</strong><br />
+        <strong>Unmatched Brand Loyalty:</strong> Customers are not just users; they are advocates, often deeply
+        embedded in the Apple ecosystem.<br /><br />
+
+        <strong>Category-Defining Products:</strong> It has repeatedly created and dominated new product categories that
+        competitors are forced to follow.<br /><br />
+
+        <strong>Financial Dominance:</strong> Its staggering market cap and revenue demonstrate its economic power and
+        stability.<br /><br />
+
+        <strong>The Ecosystem Lock-in:</strong> The seamless integration between devices and services is a competitive
+        moat that is incredibly difficult to breach.<br /><br />
+
+        <strong>Cultural Resonance:</strong> Apple is more than a company; it is a cultural icon that represents
+        innovation, design, and a specific aspirational lifestyle.<br /><br />
+
       </p>
-    </header>
+    </div>
+  </section>
 </body>
-</html></p>
+
+</html>
