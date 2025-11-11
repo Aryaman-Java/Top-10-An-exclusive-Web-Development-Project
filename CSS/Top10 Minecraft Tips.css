@@ -632,6 +632,15 @@ main {
   color: #334155;
 }
 
+.paras {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+
 /* Article typography refinements */
 article p {
   max-width: 900px;
@@ -921,4 +930,42 @@ footer .paragraph {
   text-align: center;
   font-family: Poppins;
   color: var(--text-color);
+}
+
+/* Back to top (no-JS) */
+html {
+  scroll-behavior: smooth;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: #000;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+  transition: transform 0.6s ease, box-shadow 0.2s ease, opacity 0.2s ease,
+    background-color 0.5s ease;
+  z-index: 1003;
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.back-to-top:hover {
+  transform: translateY(-6px) scale(108%);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+  background-color: var(--primary-color);
+}
+
+#theme-switch:checked ~ .page .back-to-top {
+  border-color: rgba(0, 0, 0, 0.18);
 }
