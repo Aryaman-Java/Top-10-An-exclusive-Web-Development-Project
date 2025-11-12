@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top 10-Apps of the World</title>
+    <link rel="stylesheet" href="CSS/Top 10-Apps of the World.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-container">
+        <a class="brand" href="#"
+          ><img
+            width="100"
+            height="auto"
+            src="Images/Logo.png"
+            alt="Logo image"
+          />India</a
+        >
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="main-navigation"
+          aria-label="Toggle navigation"
+        >
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+        <nav id="main-navigation" class="main-nav" aria-label="Main navigation">
+          <ul>
+            <li id="home-link"><a href="index.html">Home</a></li>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#ranking">Ranking</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".main-nav");
+
+      menuToggle.addEventListener("click", () => {
+        const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", String(!expanded));
+        document.body.classList.toggle("nav-open", !expanded);
+        nav.classList.toggle("nav-open", !expanded);
+      });
+    </script>
+  </body>
+</html>
