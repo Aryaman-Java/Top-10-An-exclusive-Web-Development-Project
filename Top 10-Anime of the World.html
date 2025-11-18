@@ -3,785 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Top 10: Anime of the World</title>
-    <link rel="stylesheet" href="CSS/style.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-    </style>
+    <title>Top 10-Anime of the World</title>
+    <link rel="stylesheet" href="CSS/Top 10-Anime of the World.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
   <body id="top">
-    <!--Navigation-->
-    <nav>
-      <input type="checkbox" id="sidebar-active" />
-      <label for="sidebar-active" class="open-sidebar-button">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="32px"
-          viewBox="0 -960 960 960"
-          width="32px"
-          fill="#e3e3e3"
-        >
-          <path
-            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-          />
-        </svg>
-      </label>
-      <label for="sidebar-active" id="overlay"></label>
-      <div class="links-container">
-        <label for="sidebar-active" class="close-sidebar-button">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="32px"
-            viewBox="0 -960 960 960"
-            width="32px"
-            fill="#e3e3e3"
-          >
-            <path
-              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-            />
-          </svg>
-        </label>
-        <a class="logo-icon" href="index.html">
-          <img
-            src="Images/Logo.png"
-            alt="Logo Image"
-            width="70px"
-            height="70px"
-          />
-          <h3>INDIA</h3>
-        </a>
-        <a href="index.html" class="underline-link home-link">Home</a>
-        <a href="#" class="underline-link">About</a>
-        <a href="#" class="underline-link">Blog</a>
-        <a href="#" class="underline-link">Login</a>
-        <a href="#" class="underline-link">Contact Us</a>
-      </div>
-    </nav>
-    <!-- Main -->
-    <main>
-      <!-- Article -->
-      <article>
-        <div>
-          <h1 id="topic">
-            <div>
-              <span id="span1"><strong>Top 10</strong></span>
-            </div>
-            <span>Anime of the World</span>
-          </h1>
-          <p class="header-description">
-            Anime, the distinctive style of Japanese animation, has evolved far
-            beyond its cultural roots to become a powerful global art form that
-            captivates audiences of all ages. Unlike traditional Western
-            cartoons, anime often combines visually striking artwork with
-            complex storytelling, exploring profound emotional and philosophical
-            themes. Its ability to blend fantasy with realism allows creators to
-            tell stories that resonate deeply with viewers—whether through the
-            futuristic landscapes of Ghost in the Shell, the heartfelt
-            coming-of-age journey in Your Lie in April, or the epic battles of
-            Naruto and One Piece. Anime’s diversity is one of its greatest
-            strengths; it encompasses countless genres such as romance, science
-            fiction, horror, slice-of-life, and psychological thrillers,
-            ensuring that there is something for every kind of viewer.
-          </p>
-          <p class="header-description">
-            Beyond entertainment, anime has become a significant cultural force
-            influencing fashion, music, art, and even global media production.
-            The emotional storytelling and unique aesthetic have inspired
-            countless artists and filmmakers around the world, bridging cultural
-            divides and introducing audiences to Japanese traditions, language,
-            and values. Conventions, cosplay, and fan communities have created
-            entire subcultures that celebrate this medium’s creativity and
-            inclusivity. Whether through the quiet introspection of Studio
-            Ghibli films or the high-octane energy of shōnen series, anime
-            continues to expand its boundaries, proving that animation can be
-            just as expressive and meaningful as any live-action storytelling.
-            In essence, anime is not just a form of entertainment—it’s a living,
-            evolving expression of imagination that connects people through
-            shared emotion, artistry, and wonder. The Top 10 Anime in the List
-            are:
-          </p>
-        </div>
-        <div class="page-navigation">
-          <ul class="anime-list">
-            <li><a href="#Dragon-Ball-Z">1. Dragon Ball Z</a></li>
-            <li><a href="#One-Piece">2. One Piece</a></li>
-            <li><a href="#Bleach">3. Bleach</a></li>
-            <li><a href="#Naruto">4. Naruto</a></li>
-            <li><a href="#Attack-On-Titan">5. Attack On Titan</a></li>
-            <li><a href="#Hunter-X-Hunter">6. Hunter X Hunter</a></li>
-            <li><a href="#Death-Note">7. Death Note</a></li>
-            <li>
-              <a href="#Fullmetal-Alchemist-Brotherhood"
-                >8. Fullmetal Alchemist Brotherhood</a
+    <input
+      type="checkbox"
+      id="theme-switch"
+      class="theme-switch-input"
+      aria-label="Toggle light mode"
+    />
+    <div class="page">
+      <header>
+        <nav>
+          <input type="checkbox" id="sidebar-active" />
+          <label for="sidebar-active" class="open-sidebar-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32px"
+              viewBox="0 -960 960 960"
+              width="32px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </label>
+          <label for="sidebar-active" id="overlay"></label>
+          <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="32px"
+                viewBox="0 -960 960 960"
+                width="32px"
+                fill="#e3e3e3"
               >
-            </li>
-            <li><a href="#Monster">9. Monster</a></li>
-            <li><a href="#Haikyuu">10. Haikyuu!</a></li>
-          </ul>
-        </div>
-      </article>
-      <!-- Section 1 -->
-      <section class="sections">
-        <div id="Dragon-Ball-Z">
-          <div class="section-main">
-            <div>
-              <h2>1. Dragon Ball Z</h2>
-            </div>
-            <div>
-              <h3>Written by: Akira Toriyama</h3>
-            </div>
-
-            <div>
-              <h3>Genre: Action, Adventure, Fantasy, Martial Arts</h3>
-            </div>
-
-            <div>
-              <h3>Story Summary:</h3>
-            </div>
-
-            <div>
-              <p>
-                Dragon Ball Z follows the story of Son Goku, a kind-hearted and
-                powerful warrior who protects Earth from a variety of villains
-                ranging from intergalactic conquerors to androids and magical
-                creatures. The series begins five years after the events of
-                Dragon Ball, with Goku discovering his alien origins as a Saiyan
-                — a powerful warrior race. Throughout the story, Goku trains
-                hard, constantly pushing his limits to become stronger and
-                protect his loved ones. Alongside his friends and family —
-                Vegeta, Gohan, Piccolo, Krillin, Bulma, and others — he battles
-                fierce enemies like Frieza, Cell, and Majin Buu. Through these
-                intense battles, the series teaches us the values of
-                perseverance, self-improvement, teamwork, and never giving up no
-                matter how strong the opponent is. Known for its thrilling
-                fights, emotional moments, and unforgettable transformations
-                like the legendary Super Saiyan, Dragon Ball Z became one of the
-                most influential anime in the world, inspiring generations of
-                fans and creators alike.
-              </p>
-            </div>
-
-            <div>
-              <h3>Sales and Popularity:</h3>
-            </div>
-
-            <div>
-              <p>
-                Dragon Ball Z and the overall Dragon Ball franchise have
-                achieved legendary global success. The manga series has sold
-                over 300 million copies worldwide, ranking among the
-                best-selling manga of all time. The anime adaptation became a
-                massive hit in Japan and internationally, especially during the
-                1990s and early 2000s, helping popularize anime in Western
-                countries. In addition to manga and anime, Dragon Ball Z’s films
-                and games have brought in billions in revenue. The 2018 film
-                Dragon Ball Super: Broly earned more than $120 million
-                worldwide, while Dragon Ball Super: Super Hero (2022) grossed
-                around $96 million. The franchise continues to generate enormous
-                profits through video games, figures, and merchandise — with
-                Bandai Namco reporting Dragon Ball as their top-earning IP,
-                generating over 144 billion yen in revenue in 2025 alone. With
-                its unmatched legacy, thrilling action, and timeless life
-                lessons, Dragon Ball Z remains a pillar of anime culture,
-                symbolizing strength, growth, and the power of never giving up.
-              </p>
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                />
+              </svg>
+            </label>
+            <a class="logo-icon" href="index.html">
+              <img
+                src="Images/Logo.png"
+                alt="Logo Image"
+                width="80px"
+                height="80px"
+              />
+              <h3>INDIA</h3>
+            </a>
+            <a href="index.html" class="underline-link home-link">
+              <i class="fas fa-home"></i>Home
+            </a>
+            <a href="#" class="underline-link">
+              <i class="fas fa-info-circle"></i>About
+            </a>
+            <a href="#" class="underline-link">
+              <i class="fas fa-blog"></i>Blog
+            </a>
+            <a href="#" class="underline-link">
+              <i class="fas fa-sign-in-alt"></i>Login
+            </a>
+            <a href="#" class="underline-link">
+              <i class="fas fa-envelope"></i>Contact Us
+            </a>
+          </div>
+          <label for="theme-switch" class="theme-toggle">
+            <span class="sr-only">Switch theme</span>
+            <i class="fas fa-moon icon-dark" aria-hidden="true"></i>
+            <i class="fas fa-sun icon-light" aria-hidden="true"></i>
+          </label>
+        </nav>
+        <div class="header">
+          <div class="header-left">
+            <span class="header-left-span">Global Storytelling Spotlight</span>
+            <h1 class="header-left-h1">
+              Top 10 Anime Shaping Creativity across the World!
+            </h1>
+            <p class="header-left-para">
+              From iconic shōnen sagas to cerebral thrillers, this curated
+              lineup showcases the series that redefined animation, fandom, and
+              modern myth-making.
+            </p>
+            <div class="header-left-btns">
+              <a href="" class="btn primary-btn">Explore the list</a>
+              <a href="" class="btn ghost-btn">
+                <i class="fa-solid fa-circle-info"></i>Why anime matters
+              </a>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- Section 2 -->
-      <section class="sections">
-        <div id="One-Piece">
-          <div class="section-main">
-            <div class="anime-name">
-              <h2>2. One Piece</h2>
-            </div>
-            <div class="author-name">
-              <h3>Written by: Eiichiro Oda</h3>
-            </div>
-
-            <div>
-              <h3>Genre: Adventure, Fantasy, Action</h3>
-            </div>
-
-            <div>
-              <h3>Story Summary:</h3>
-            </div>
-
-            <div>
+          <div class="header-right">
+            <div class="header-right-card">
+              <span class="header-right-span">Watchlist Fuel</span>
               <p>
-                One Piece follows the adventures of Monkey D. Luffy, a cheerful
-                and determined young pirate who gains the ability to stretch
-                like rubber after eating a mysterious fruit called the Gomu Gomu
-                no Mi (Devil Fruit). Inspired by his childhood idol “Red-Haired”
-                Shanks, Luffy sets out to become the Pirate King by finding the
-                world’s greatest treasure — the legendary One Piece, left behind
-                by the former Pirate King, Gol D. Roger. During his journey,
-                Luffy forms his crew, the Straw Hat Pirates, including Zoro,
-                Nami, Usopp, Sanji, Chopper, Robin, Franky, Brook, and Jinbe.
-                Together, they sail through the Grand Line, facing powerful
-                enemies, corrupt governments, and mysterious forces, teaching us
-                about friendship, freedom, dreams, loyalty, and never giving up
-                on our goals no matter how tough the journey becomes. The story
-                is celebrated for its deep world-building, emotional
-                storytelling, humor, and epic battles, making One Piece not just
-                a tale of pirates — but a timeless lesson about courage, hope,
-                and chasing one’s dreams.
+                Queue up legendary journeys, emotional crescendos, and bold
+                experiments in animation craft.
               </p>
+              <div class="header-right-capsules">
+                <p>Classic Era</p>
+                <p>Golden 2000s</p>
+                <p>Modern Epics</p>
+              </div>
             </div>
-
-            <div>
-              <h3>Sales and Popularity:</h3>
-            </div>
-
-            <div>
-              <p>
-                One Piece has become one of the most successful manga and anime
-                franchises of all time. The manga has sold over 578 million
-                copies worldwide as of July 2025, making it the best-selling
-                manga series in history. Every volume continues to sell over a
-                million copies in Japan, proving its enduring fame. The anime
-                films have also broken records — One Piece Film: Red (2022)
-                earned nearly 31.9 billion yen globally and became one of
-                Japan’s highest-grossing films, while movies like Stampede and
-                Strong World were major box office hits. Beyond manga and films,
-                the franchise generates huge revenue from anime, games, and
-                merchandise. Toei Animation reported yearly earnings of about
-                22.2 billion yen from the One Piece anime, and Bandai Namco’s
-                2025 report showed over 139 billion yen in global sales from One
-                Piece products and licensing. With its record-breaking sales,
-                emotional storytelling, and powerful themes, One Piece stands as
-                a global cultural phenomenon that continues to inspire fans
-                across generations.
-              </p>
-            </div>
+            <div class="orb orb1"></div>
+            <div class="orb orb2"></div>
           </div>
         </div>
-      </section>
-      <!-- Section 3 -->
-      <section class="sections">
-        <div id="Bleach">
-          <div class="section-main">
-            <div class="anime-name">
-              <h2>3. Bleach</h2>
+      </header>
+      <main>
+        <article>
+          <div class="cards">
+            <div class="card">
+              <span>Readers Reached</span>
+              <h3>1B+</h3>
+              <p>Combined manga circulation worldwide</p>
             </div>
-            <div class="author-name">
-              <h3>Written by: Tite Kubo</h3>
+            <div class="card">
+              <span>Years of Impact</span>
+              <h3>40+</h3>
+              <p>Legacy spanning generations of fans</p>
             </div>
-
-            <div>
-              <h3>Genre: Action, Supernatural, Fantasy, Adventure</h3>
-            </div>
-
-            <div>
-              <h3>Story Summary:</h3>
-            </div>
-
-            <div>
-              <p>
-                Bleach follows the story of Ichigo Kurosaki, a high school
-                student who unexpectedly gains the powers of a Soul Reaper — a
-                celestial being responsible for guiding lost souls to the
-                afterlife and protecting the living world from evil spirits
-                known as Hollows. When a Soul Reaper named Rukia Kuchiki
-                transfers her powers to him during battle, Ichigo becomes
-                involved in the hidden spiritual world that exists alongside the
-                human one. As Ichigo learns to control his new powers, he is
-                drawn into intense battles across different realms, including
-                the Soul Society, Hueco Mundo, and Wandenreich, facing deadly
-                enemies like Aizen, Ulquiorra, and Yhwach. Throughout his
-                journey, Ichigo fights not only to protect his friends but also
-                to discover his true identity and destiny. The series teaches us
-                about courage, sacrifice, the meaning of friendship, and the
-                strength to fight for what's right even when the odds are
-                impossible. With its mix of deep emotions, stylish battles, and
-                memorable characters, Bleach stands as one of the most iconic
-                shonen anime and manga ever created.
-              </p>
-            </div>
-
-            <div>
-              <h3>Sales and Popularity:</h3>
-            </div>
-
-            <div>
-              <p>
-                Bleach achieved tremendous success worldwide, becoming one of
-                the best-selling manga series of all time with over 140 million
-                copies sold globally. The manga's popularity led to a
-                long-running anime adaptation that aired from 2004 to 2012,
-                later returning triumphantly in 2022 with Bleach: Thousand-Year
-                Blood War, which was praised for its stunning animation and
-                faithfulness to the manga's final arc. The franchise expanded
-                into films, novels, and games, earning massive profits through
-                global licensing and merchandise. Its movies — such as Bleach:
-                Memories of Nobody and Fade to Black — performed well in Japan,
-                while the 2018 live-action film introduced the story to new
-                audiences. The Bleach brand continues to be a major influence in
-                anime culture, celebrated for its stylish art, emotional
-                storytelling, and epic sword battles.
-              </p>
+            <div class="card">
+              <span>Genres Covered</span>
+              <h3>25</h3>
+              <p>Action, fantasy, slice of life, thriller & more</p>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- Section 4 -->
-      <section class="sections">
-        <div id="Naruto">
-          <div class="section-main">
-            <div class="anime-name">
-              <h2>4. Naruto</h2>
-            </div>
-            <div class="author-name">
-              <h3>Written by: Masashi Kishimoto</h3>
-            </div>
-
-            <div>
-              <h3>Genre: Action, Adventure, Fantasy, Martial Arts</h3>
-            </div>
-
-            <div>
-              <h3>Story Summary:</h3>
-            </div>
-
-            <div>
-              <p>
-                Naruto tells the story of Naruto Uzumaki, a young and energetic
-                ninja from the Hidden Leaf Village who dreams of becoming the
-                Hokage, the strongest ninja and leader of his village. Despite
-                being shunned by others because of the Nine-Tailed Fox (Kurama)
-                sealed inside him, Naruto never gives up on his dream or his
-                belief in friendship and determination. Throughout his journey,
-                Naruto trains hard under mentors like Kakashi Hatake and
-                Jiraiya, and forms deep bonds with teammates Sasuke Uchiha and
-                Sakura Haruno. Together, they face dangerous missions, powerful
-                enemies, and internal struggles that test their strength and
-                resolve. The story teaches us the importance of perseverance,
-                forgiveness, loyalty, and believing in oneself even when the
-                world stands against you. As Naruto grows, he inspires others
-                through his courage and unbreakable will, eventually achieving
-                his dream and showing that anyone — no matter their past — can
-                become a true hero.
-              </p>
-            </div>
-
-            <div>
-              <h3>Sales and Popularity:</h3>
-            </div>
-
-            <div>
-              <p>
-                Naruto is one of the most successful manga and anime franchises
-                in history, with over 250 million copies sold worldwide as of
-                2025. The manga’s global success made it one of Shueisha’s “Big
-                Three” alongside One Piece and Bleach. The anime adaptation,
-                which ran from 2002 to 2017 (including Naruto: Shippuden),
-                became a massive international hit and helped bring anime into
-                mainstream culture across the world. The franchise expanded into
-                movies, novels, games, and merchandise, generating billions in
-                revenue. Popular films like The Last: Naruto the Movie and
-                Boruto: Naruto the Movie were box-office hits, while the sequel
-                series Boruto: Naruto Next Generations continues the legacy with
-                Naruto’s son as the main character. With its emotional
-                storytelling, unforgettable characters, and themes of
-                friendship, pain, and redemption, Naruto remains a global
-                cultural icon that inspires people to chase their dreams and
-                never give up — no matter how hard the journey gets.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Section 5 -->
-      <section class="sections">
-        <div id="Attack-On-Titan">
-          <div class="section-main">
-            <div class="anime-name">
-              <h2>5. Attack On Titan (AOT)</h2>
-            </div>
-            <div class="author-name">
-              <h3>Written by: Hajime Isayama</h3>
-            </div>
-
-            <div>
-              <h3>Genre: Action, Dark Fantasy, Drama, Post-Apocalyptic</h3>
-            </div>
-
-            <div>
-              <h3>Story Summary:</h3>
-            </div>
-
-            <div>
-              <p>
-                Attack on Titan is set in a world where humanity lives within
-                massive walled cities to protect themselves from giant
-                man-eating creatures known as Titans. The story follows Eren
-                Yeager, along with his friends Mikasa Ackerman and Armin Arlert,
-                who join the military to fight the Titans after their hometown
-                is destroyed. As the series unfolds, Eren discovers shocking
-                truths about the Titans, the walls, and the history of humanity
-                itself. The story explores themes of freedom, survival,
-                sacrifice, and the cycle of hatred, teaching us about the harsh
-                realities of war and the cost of pursuing freedom. Attack on
-                Titan is known for its deep plot, emotional storytelling, and
-                incredible twists, making it one of the most powerful and
-                thought-provoking anime ever created.
-              </p>
-            </div>
-
-            <div>
-              <h3>Sales and Popularity:</h3>
-            </div>
-
-            <div>
-              <p>
-                The Attack on Titan manga has sold over 140 million copies
-                worldwide, making it one of the best-selling manga of all time.
-                The anime adaptation, which aired from 2013 to 2023, was a
-                global phenomenon and received widespread critical acclaim for
-                its animation, music, and storytelling. Its final season became
-                one of the most-watched anime events in history. The franchise
-                has also earned billions in revenue from films, merchandise, and
-                games, solidifying Attack on Titan as one of the most impactful
-                modern anime series ever made.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Section 6 -->
-      <section class="sections">
-        <div id="Hunter-X-Hunter">
-          <div class="section-main">
-            <div class="anime-name">
-              <h2>6. Hunter X Hunter</h2>
-            </div>
-            <div class="author-name">
-              <h3>Written by: Yoshihiro Togashi</h3>
-            </div>
-
-            <div>
-              <h3>Genre: Adventure, Fantasy, Action, Psychological</h3>
-            </div>
-
-            <div>
-              <h3>Story Summary:</h3>
-            </div>
-
-            <div>
-              <p>
-                Hunter X Hunter follows Gon Freecss, a cheerful young boy who
-                discovers that his long-lost father, Ging Freecss, is a
-                world-famous “Hunter” — a professional who takes on dangerous
-                missions like tracking treasures, exploring uncharted lands, or
-                capturing criminals. Determined to find his father, Gon sets out
-                to become a Hunter himself. Along the way, he meets loyal
-                friends — Killua, Kurapika, and Leorio — and together they face
-                dangerous challenges, tournaments, and life-threatening
-                adventures. The series teaches about friendship, courage,
-                self-discovery, and the emotional complexity of human nature.
-                Known for its brilliant storytelling, complex characters, and
-                unpredictable plotlines, Hunter × Hunter is widely considered
-                one of the smartest and most creative anime ever made.
-              </p>
-            </div>
-
-            <div>
-              <h3>Sales and Popularity:</h3>
-            </div>
-
-            <div>
-              <p>
-                Hunter X Hunter has sold over 85 million copies worldwide,
-                earning its place among Japan’s most successful manga. The anime
-                adaptations (1999 and 2011 versions) received global praise for
-                their strong emotional writing and high-quality animation.
-                Despite the author’s long hiatuses due to health issues, the
-                series remains loved by millions of fans. Its games, films, and
-                merchandise continue to perform well, proving the long-lasting
-                popularity of Togashi’s masterpiece.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Section 7 -->
-      <section class="sections">
-        <div id="Death-Note">
-          <div class="section-main">
-            <div class="anime-name">
-              <h2>7. Death Note</h2>
-            </div>
-            <div class="author-name">
-              <h3>Written by: Tsugumi Ohba Illustrated by: Takeshi Obata</h3>
-            </div>
-
-            <div>
-              <h3>
-                Genre: Psychological Thriller, Mystery, Supernatural, Crime
-              </h3>
-            </div>
-
-            <div>
-              <h3>Story Summary:</h3>
-            </div>
-
-            <div>
-              <p>
-                Death Note tells the story of Light Yagami, a brilliant high
-                school student who discovers a mysterious notebook called the
-                Death Note, which allows its user to kill anyone simply by
-                writing their name in it. Believing he can create a perfect
-                world free of crime, Light begins using the notebook to
-                eliminate criminals — but soon finds himself hunted by the
-                genius detective L. The series becomes a psychological battle
-                between Light and L, full of strategy, deception, and moral
-                conflict. Death Note teaches us about justice, power,
-                corruption, and how absolute control can destroy even the purest
-                intentions.
-              </p>
-            </div>
-
-            <div>
-              <h3>Sales and Popularity:</h3>
-            </div>
-
-            <div>
-              <p>
-                Death Note has sold over 30 million copies worldwide, ranking
-                among the most successful psychological manga ever created. The
-                anime adaptation (2006–2007) became a global hit, praised for
-                its suspense, sharp writing, and iconic characters. The
-                franchise expanded into live-action films, novels, musicals, and
-                games, with worldwide popularity across multiple generations.
-                Death Note remains one of the most influential anime of all
-                time, known for its dark themes and mind-blowing plot twists
-                that forever changed the way people view anime storytelling.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Section 8 -->
-      <section class="sections">
-        <div id="Fullmetal-Alchemist-Brotherhood">
-          <div class="section-main">
-            <div class="anime-name">
-              <h2>8. Fullmetal Alchemist: Brotherhood</h2>
-            </div>
-            <div class="author-name">
-              <h3>Written by: Hiromu Arakawa</h3>
-            </div>
-
-            <div>
-              <h3>Genre: Action, Adventure, Fantasy, Drama, Science Fiction</h3>
-            </div>
-
-            <div>
-              <h3>Story Summary:</h3>
-            </div>
-
-            <div>
-              <p>
-                Fullmetal Alchemist: Brotherhood follows the story of two
-                brothers, Edward and Alphonse Elric, who live in a world where
-                alchemy — the science of transforming matter — is a powerful and
-                respected art. After a tragic attempt to use alchemy to bring
-                their mother back to life goes horribly wrong, Edward loses his
-                arm and leg, and Alphonse loses his entire body, his soul bound
-                to a suit of armor. Determined to restore their bodies, the
-                brothers become State Alchemists and set off on a dangerous
-                journey to find the mythical Philosopher’s Stone, a powerful
-                object said to amplify alchemical abilities. Along the way, they
-                uncover dark government secrets, ancient conspiracies, and the
-                true cost of human ambition. The series teaches us about
-                sacrifice, brotherhood, morality, and the consequences of trying
-                to play god, showing that true strength lies in compassion and
-                perseverance. With its deep themes, emotional storytelling, and
-                perfectly structured plot, Fullmetal Alchemist: Brotherhood is
-                often regarded as one of the greatest anime ever made.
-              </p>
-            </div>
-
-            <div>
-              <h3>Sales and Popularity:</h3>
-            </div>
-
-            <div>
-              <p>
-                The Fullmetal Alchemist manga has sold over 80 million copies
-                worldwide, making it one of the best-selling manga series of all
-                time. The Brotherhood anime, released in 2009, received
-                universal acclaim for its faithful adaptation, beautiful
-                animation, and emotional depth — often ranked as the #1 anime of
-                all time on major platforms like MyAnimeList. The franchise has
-                also spawned successful films, novels, games, and live-action
-                adaptations, continuing to generate massive global popularity.
-                Its blend of action, heart, and philosophical depth has made
-                Fullmetal Alchemist: Brotherhood a timeless masterpiece that
-                continues to inspire and move fans around the world.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Section 9 -->
-      <section class="sections">
-        <div id="Monster">
-          <div class="section-main">
-            <div class="anime-name">
-              <h2>9. Monster</h2>
-            </div>
-            <div class="author-name">
-              <h3>Written by: Naoki Urasawa</h3>
-            </div>
-
-            <div>
-              <h3>Genre: Psychological Thriller, Mystery, Drama, Seinen</h3>
-            </div>
-
-            <div>
-              <h3>Story Summary:</h3>
-            </div>
-
-            <div>
-              <p>
-                Monster follows Dr. Kenzo Tenma, a brilliant Japanese brain
-                surgeon living in Germany, whose life changes when he saves the
-                life of a young boy who later grows up to become a dangerous
-                serial killer. Haunted by guilt, Tenma sets out on a relentless
-                journey across Europe to stop the boy, now known as Johan
-                Liebert, while uncovering dark conspiracies and confronting
-                moral dilemmas. The series teaches about morality, the value of
-                human life, the consequences of choices, and the complex nature
-                of good and evil. It is renowned for its gripping suspense,
-                intelligent plotting, and deep psychological exploration.
-              </p>
-            </div>
-
-            <div>
-              <h3>Sales and Popularity:</h3>
-            </div>
-
-            <div>
-              <p>
-                The Monster manga has sold over 20 million copies worldwide and
-                is acclaimed as one of the greatest psychological thriller manga
-                ever written. The anime adaptation (2004–2005) received global
-                praise for its intense storytelling, mature themes, and faithful
-                adaptation of the manga. Monster continues to be influential in
-                both manga and anime communities, celebrated for its intricate
-                plot, moral complexity, and unforgettable characters.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Section 10 -->
-      <section class="sections">
-        <div id="Haikyuu">
-          <div class="section-main">
-            <div class="anime-name">
-              <h2>10. Haikyuu!</h2>
-            </div>
-            <div class="author-name">
-              <h3>Written by: Haruichi Furudate</h3>
-            </div>
-
-            <div>
-              <h3>Genre: Sports, Comedy, Drama, School</h3>
-            </div>
-
-            <div>
-              <h3>Story Summary:</h3>
-            </div>
-
-            <div>
-              <p>
-                Haikyuu! follows Shoyo Hinata, a passionate and determined high
-                school student who dreams of becoming a top volleyball player
-                despite his small stature. Inspired by a famous player known as
-                “The Little Giant,” Hinata joins Karasuno High School’s
-                volleyball team, where he forms a powerful partnership with his
-                talented but prideful teammate Tobio Kageyama. Throughout the
-                series, Hinata and his teammates face formidable opponents,
-                overcome setbacks, and grow both as athletes and as friends. The
-                story teaches us about teamwork, perseverance, self-improvement,
-                and the importance of believing in yourself and your team.
-              </p>
-            </div>
-
-            <div>
-              <h3>Sales and Popularity:</h3>
-            </div>
-
-            <div>
-              <p>
-                The Haikyuu! manga has sold over 50 million copies worldwide,
-                and the anime adaptation (2014–2020) became a major hit, praised
-                for its energetic animation and accurate depiction of
-                volleyball. The franchise also includes stage plays, video
-                games, and merchandise, generating significant revenue. With its
-                inspiring themes and memorable characters, Haikyuu! continues to
-                motivate fans and athletes worldwide.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!--Footer-->
-    <footer>
-      <h3>Top 10</h3>
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-        <li>
-          <a href="#">Blog</a>
-        </li>
-        <li>
-          <a href="#">Services</a>
-        </li>
-        <li>
-          <a href="#">Pricing</a>
-        </li>
-      </ul>
-      <div class="social-icons">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-pinterest"></i>
-        <i class="fab fa-linkedin"></i>
-      </div>
-      <div class="paragraph">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam,
-        veniam? Laboriosam saepe dolorum cumque, a, esse rerum sint quidem omnis
-        odit hic rem!
-      </div>
-    </footer>
-    <a
-      href="#top"
-      class="back-to-top"
-      aria-label="Back to top"
-      title="Back to top"
-      >↑</a
-    >
+        </article>
+      </main>
+    </div>
   </body>
 </html>
