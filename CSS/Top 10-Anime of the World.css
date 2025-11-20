@@ -35,7 +35,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font-family);
-  background-color: var(--background-color);
+  background: radial-gradient(
+    circle at top,
+    #101535 0%,
+    #05060d 55%,
+    #020308 100%
+  );
   color: var(--text-color);
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -83,6 +88,19 @@ a {
 
 .fa {
   color: #e0aaff;
+}
+
+.backdrop-filter {
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.08) 1px,
+    transparent 0
+  );
+  background-size: 120px 120px;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: -1;
 }
 
 /* Navigation Selectors */
@@ -393,6 +411,39 @@ nav svg {
   border: 1px solid #30324c;
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: #171b36;
+  border: 1px solid #343850;
+  border-radius: 18px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card span {
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+}
+
+.card h3 {
+  margin: 0.35rem 0;
+  display: block;
+  font-size: 2rem;
+}
+
+.card p {
+  opacity: 0.6;
+}
+
 .header-right {
   background: linear-gradient(
     135deg,
@@ -459,10 +510,134 @@ nav svg {
 }
 /* Main Selectors */
 article {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.8fr);
+  margin: 2rem auto 0;
+  gap: 2rem;
+  width: min(1200px, 92vw);
+  padding: 2.5rem 0;
 }
 
-.cards {
+@media (max-width: 1024px) {
+  article {
+    grid-template-columns: 1fr;
+  }
+}
+
+.article-text {
+  gap: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  color: #adb1e3;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.user-guide {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    135deg,
+    rgba(19, 25, 43, 0.9),
+    rgba(9, 12, 26, 0.9)
+  );
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  position: relative;
+  padding: 1.5rem;
+}
+
+.user-guide::after {
+  content: "";
+  position: absolute;
+  inset: 30% -40% -30% -40%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 107, 157, 0.25),
+    transparent 60%
+  );
+  z-index: 0;
+}
+
+.user-guide h2 {
+  display: block;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.user-guide ul {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  margin: 1rem 0;
+  gap: 0.8rem;
+  list-style: none;
+  opacity: 0.7;
+}
+
+.user-guide ul li::before {
+  content: "•";
+  margin-right: 0.5rem;
+  color: #ff6b9d;
+}
+
+.user-guide div {
+  background-color: rgba(5, 6, 13, 0.6);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  position: relative;
+  border: 1px dashed rgba(255, 255, 255, 0.12);
+  padding: 1.2rem;
+  z-index: 1;
+}
+
+.user-guide div span {
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+
+.directory-card {
+  background: #111428;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(4, 7, 15, 0.6);
+  padding: 2rem;
+  width: min(1200px, 92vw);
+  margin: 0 auto;
+}
+
+.directory-header h2 {
+  margin-bottom: 0.35rem;
+}
+
+.directory-header span {
+  opacity: 0.7;
+}
+
+.anime-list {
+  margin-top: 1.5rem;
+  list-style: none;
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.75rem;
+}
+
+.anime-list a {
+  display: block;
+  padding: 0.85rem 1.1rem;
+  background-color: #191c2e;
+  border-radius: 18px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  color: #f5f7ff;
+}
+
+.anime-list a:hover {
+  transform: translateY(-3px);
+  border-color: #bc547d;
 }
