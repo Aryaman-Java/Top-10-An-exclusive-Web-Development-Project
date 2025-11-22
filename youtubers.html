@@ -28,14 +28,19 @@ world. Here is a summary of what the code is doing: -->
       --accent-2: #40c9ff;
       --border: rgba(255, 255, 255, 0.12);
       --primary-color: #ff585d;
+      
+   
     }
 
     #theme-switch:checked~.page {
       --color-1: #ffffff;
       --text-color: #1f2430;
+      --text:#1f2430;
       --background-color: #f1f4f8;
       --secondary-color: #1a7f37;
       --hover-color: #6f42c1;
+      --card:var(--background-color);
+      --muted:var lightgrey;
     }
 
     * {
@@ -146,10 +151,6 @@ website. Here is a breakdown of what the code is doing: */
       align-items: center;
       text-decoration: none;
       color: var(--text-color);
-      border-radius: 5px;
-      display: flex;
-      align-items: center;
-      text-decoration: none;
       border-radius: 5px;
       transition: all 0.7s ease;
       gap: 10px;
@@ -368,6 +369,7 @@ website. Here is a breakdown of what the code is doing: */
     .content {
       background: var(--card);
       border-radius: 24px;
+      border: 2px solid black;
       padding: 24px;
       border: 1px solid var(--border);
       position: relative;
@@ -435,7 +437,7 @@ website. Here is a breakdown of what the code is doing: */
     }
 
     .two p {
-      color: whitesmoke;
+      color:var(--text);
       font-size: 16px;
     }
 
@@ -471,13 +473,12 @@ website. Here is a breakdown of what the code is doing: */
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      margin: 20px 0 !important;
-      /* Override previous ul styles */
-      margin-left: 0 !important;
+      margin: 20px 0 ;
+      margin-left: 0 ;
     }
 
     footer ul li a {
-      color: var(--text);
+      color: white;
       text-decoration: none;
       transition: color 0.3s ease;
       font-weight: bold;
@@ -539,7 +540,7 @@ website. Here is a breakdown of what the code is doing: */
       font-size: 16px;
       max-width: 600px;
       text-align: center;
-      color: var(--muted);
+      color: white;
       line-height: 1.6;
     }
 
@@ -578,6 +579,16 @@ website. Here is a breakdown of what the code is doing: */
     #theme-switch:checked~.page .back-to-top {
       border-color: rgba(0, 0, 0, 0.18);
     }
+    /* Dark borders for cards in light mode */
+#theme-switch:checked ~ .page .content {
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Optional: Add border to filter buttons too */
+#theme-switch:checked ~ .page ul li {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
   </style>
 </head>
 
@@ -742,5 +753,4 @@ website. Here is a breakdown of what the code is doing: */
     <a href="#top" class="back-to-top" aria-label="Back to top" title="Back to top">↑</a>
   </div>
 </body>
-
 </html>
