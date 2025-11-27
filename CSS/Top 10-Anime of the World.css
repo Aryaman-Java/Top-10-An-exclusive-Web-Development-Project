@@ -4,7 +4,12 @@
   --color-1: #080917;
   --accent-color: #e74c3c;
   --text-color: #ecf0f1;
-  --background-color: #0f1432;
+  --background-color: radial-gradient(
+    circle at top,
+    #101535 0%,
+    #05060d 55%,
+    #020308 100%
+  );
   --font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --primary-color: #c277fb;
   --secondary-color: #27ae60;
@@ -39,12 +44,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font-family);
-  background: radial-gradient(
-    circle at top,
-    #101535 0%,
-    #05060d 55%,
-    #020308 100%
-  );
+  background: var(--background-color);
   color: var(--text-color);
   overflow-x: hidden;
   transition: background-color 0.4s ease, color 0.4s ease;
@@ -52,12 +52,7 @@ body {
 
 .page {
   min-height: 100vh;
-  background: radial-gradient(
-    circle at top,
-    #101535 0%,
-    #05060d 55%,
-    #020308 100%
-  );
+  background: var(--background-color);
   color: var(--text-color);
   transition: background-color 0.4s ease, color 0.4s ease;
   display: flex;
@@ -120,11 +115,11 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  position: sticky;
+  position: fixed;
   left: 0;
   width: 100%;
   top: 0;
-  z-index: 1000;
+  z-index: 10000;
   gap: 8px;
   transition: background-color 0.4s ease, box-shadow 0.3s ease,
     backdrop-filter 0.3s ease;
@@ -254,7 +249,7 @@ nav svg {
 
 @media (max-width: 778px) {
   nav {
-    position: sticky;
+    position: fixed;
     top: 0px;
     z-index: 1000;
     justify-content: space-between;
@@ -360,7 +355,7 @@ nav svg {
   gap: 2.5rem;
   align-items: center;
   width: min(1200px, 92vw);
-  margin: 0 auto;
+  margin: 8rem auto 0;
 }
 
 .header-left {
@@ -417,6 +412,7 @@ nav svg {
 .ghost-btn {
   background: transparent;
   border: 1px solid #30324c;
+  color: var(--text-color);
 }
 
 .cards {
@@ -433,6 +429,10 @@ nav svg {
   padding: 1.25rem;
   display: flex;
   flex-direction: column;
+}
+
+#theme-switch:checked ~ .page .card {
+  background-color: #fff;
 }
 
 .card span {
@@ -467,6 +467,10 @@ nav svg {
   padding: 2rem;
 }
 
+#theme-switch:checked ~ .page .header-right {
+  background: #fff;
+}
+
 .header-right-card {
   position: relative;
   z-index: 2;
@@ -497,11 +501,24 @@ nav svg {
   left: -20px;
 }
 
+#theme-switch:checked ~ .page .orb1 {
+  background: rgb(47 209 241 / 85%);
+}
+
+#theme-switch:checked ~ .page .orb2 {
+  background: rgb(255 0 0 / 70%);
+}
+
 .header-right-span {
   color: #01ccf6;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   font-size: 0.86rem;
+}
+
+#theme-switch:checked ~ .page .header-right-span {
+  color: rgb(245, 28, 4);
+  font-weight: bold;
 }
 
 .header-right-capsules {
@@ -516,6 +533,12 @@ nav svg {
   background-color: rgba(255, 255, 255, 0.04);
   border-radius: 999px;
 }
+
+#theme-switch:checked ~ .page .header-right-capsules p {
+  background-color: #dedff4;
+  border: 1px solid #000000;
+}
+
 /* Main Selectors */
 article {
   display: grid;
@@ -541,6 +564,10 @@ article {
   line-height: 1.7;
 }
 
+#theme-switch:checked ~ .page .article-text {
+  color: #000;
+}
+
 .user-guide {
   display: flex;
   flex-direction: column;
@@ -554,6 +581,11 @@ article {
   overflow: hidden;
   position: relative;
   padding: 1.5rem;
+}
+
+#theme-switch:checked ~ .page .user-guide {
+  background: #fff;
+  border: 1px solid #000;
 }
 
 .user-guide::after {
@@ -585,6 +617,15 @@ article {
   opacity: 0.7;
 }
 
+#theme-switch:checked ~ .page .user-guide ul {
+  color: #000;
+  opacity: 0.9;
+}
+
+#theme-switch:checked ~ .page .user-guide ul li::before {
+  color: #000;
+}
+
 .user-guide ul li::before {
   content: "•";
   margin-right: 0.5rem;
@@ -603,6 +644,16 @@ article {
   z-index: 1;
 }
 
+#theme-switch:checked ~ .page .user-guide div {
+  background-color: #ecf0f1;
+  border: 1px solid black;
+  color: #000;
+}
+
+#theme-switch:checked ~ .page .user-guide div span {
+  opacity: 0.9;
+}
+
 .user-guide div span {
   margin-bottom: 1rem;
   opacity: 0.7;
@@ -616,6 +667,10 @@ article {
   padding: 2rem;
   width: min(1200px, 92vw);
   margin: 0 auto;
+}
+
+#theme-switch:checked ~ .page .directory-card {
+  background: #fff;
 }
 
 .directory-header h2 {
@@ -632,6 +687,16 @@ article {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 0.75rem;
+}
+
+#theme-switch:checked ~ .page .anime-list a {
+  background-color: #adb1e3;
+  color: #000;
+  border: 1px solid #adb1e3;
+}
+
+#theme-switch:checked ~ .page .anime-list a:hover {
+  border-color: #000;
 }
 
 .anime-list a {
@@ -674,6 +739,10 @@ section {
   gap: 1.5rem;
 }
 
+#theme-switch:checked ~ .page section {
+  background: #fff;
+}
+
 .sec-header {
   display: flex;
   flex-direction: column;
@@ -709,6 +778,10 @@ section {
   color: #c5c9ff;
 }
 
+#theme-switch:checked ~ .page .sec-header p {
+  color: #000;
+}
+
 .sec-header p i {
   color: #ff6b9d;
 }
@@ -719,6 +792,10 @@ section {
   gap: 0.7rem;
   color: #c5c9ff;
   font-size: 0.8rem;
+}
+
+#theme-switch:checked ~ .page .capsules {
+  color: #000;
 }
 
 .capsule {
@@ -735,6 +812,11 @@ section {
   padding: 1.2rem;
 }
 
+#theme-switch:checked ~ .page .story {
+  background: #c5c9ff;
+  border: 1px solid black;
+}
+
 .story h3 {
   margin-bottom: 0.6rem;
 }
@@ -743,11 +825,19 @@ section {
   color: #c5c9ff;
 }
 
+#theme-switch:checked ~ .page .story p {
+  color: #000;
+}
+
 /* Footer Selectors */
 footer {
   background-color: #03040a;
   padding: 3rem 0 2rem;
   border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+#theme-switch:checked ~ .page footer {
+  background-color: #fff;
 }
 
 .footer-inner {
@@ -765,6 +855,11 @@ footer {
   letter-spacing: 0.2em;
   font-size: 0.8rem;
   color: #00d4ff;
+}
+
+#theme-switch:checked ~ .page #eyebrow {
+  color: red;
+  font-weight: bold;
 }
 
 .footer-inner:first-child h3 {
@@ -795,6 +890,10 @@ footer {
   color: #c5c9ff;
 }
 
+#theme-switch:checked ~ .page .footer-links ul li a {
+  color: #000;
+}
+
 .social-icons {
   display: flex;
   gap: 0.75rem;
@@ -812,9 +911,18 @@ footer {
   color: #f5f7ff;
 }
 
+#theme-switch:checked ~ .page .social-icons a {
+  color: #000;
+  border: 1px solid #c5c9ff;
+}
+
 .footer-links a:hover {
   border-color: #ff6b9d;
   transform: translateY(-3px);
+}
+
+#theme-switch:checked ~ .page .social-icons a:hover {
+  border-color: #000;
 }
 
 .footer-links a i {
