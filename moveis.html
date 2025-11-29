@@ -21,9 +21,11 @@
   --secondary-color: #27ae60;
   --hover-color: #8e44ad;
   --btn-color: #2980b9;
-  --section-color: #1a1625;
-  --sec-icon-fill: #27ae60;
-  --article-color: #412859;
+  --section-color: #e23b15;
+  --sec-icon-fill: #e7d512;
+  --article-color: #33a90f;
+  --primary: #3524ca;
+  --accent-purple: #23c7dd;
 }
 
 /* Light theme overrides */
@@ -304,20 +306,18 @@ p{
     #943cc4 60%,
     #050918 100%
   );
-  width: 1400px;
-  margin-left: 60px;
-  margin-top: 30px;
-  position: absolute;
-}
-.moveis ::before{
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: linear-gradient(180deg, var(--primary) 0%, var(--accent-purple) 50%, transparent 100%);
-        transform: translateX(-50%);
+  width: 90%;
+  max-width: 1400px;
+  margin: 30px auto;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border: 4px solid;
+  border-image: linear-gradient(45deg, 
+    var(--primary), 
+    var(--accent-purple),
+    var(--section-color),
+    var(--sec-icon-fill)
+  ) 1;
 }
 </style>
 </head>
